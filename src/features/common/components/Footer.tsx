@@ -3,8 +3,8 @@ import { LanguageSwitcher } from '@/features/common/components/LanguageSwitcher'
 
 function getLocales() {
   return [
-    { name: 'Español', shortName: 'es', href: getHomeHref('es') },
     { name: 'English', shortName: 'en', href: getHomeHref('en') },
+    { name: 'Español', shortName: 'es', href: getHomeHref('es') },
   ]
 }
 
