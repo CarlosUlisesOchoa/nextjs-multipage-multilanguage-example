@@ -4,6 +4,13 @@
     "./node_modules/standard/eslintrc.json"
   ],
   "rules": {
+    "import/no-duplicates": "off",
+    "quotes": "off",
+    "block-spacing": "off",
+    "no-lone-blocks": "off",
+    "import/first": "off",
+    "object-curly-spacing": "off",
+    "jsx-quotes": "off",
     "space-before-function-paren": "off",
     "no-unused-vars": "warn",
     "no-undef": "error",
