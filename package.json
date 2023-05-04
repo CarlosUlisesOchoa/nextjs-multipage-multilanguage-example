@@ -3,17 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "roots": "pnpm next-roots",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "1.7.8",
+    "@heroicons/react": "2.0.17",
+    "clsx": "1.2.1",
     "next": "13.3.4",
     "next-roots": "3.0.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "server-only": "0.0.1"
   },
   "devDependencies": {
     "@types/node": "18.16.3",

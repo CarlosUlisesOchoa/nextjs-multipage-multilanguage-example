@@ -1,0 +1,48 @@
+{
+  "dictionaries": [
+    {
+      "locale": "en",
+      "value": {
+        "common": {
+          "title": "NextRoots",
+          "description": "Next 13 app multipage and multilanguage example"
+        },
+        "home": {
+          "title": "Home",
+          "content": "The home page can be so boring. There are so many images and blocks of text that you don't know where to start. Most of the time, all you want is to get to what really matters, but you have to scroll up and down to find what you're looking for. Sometimes, it feels like you'll never stop scrolling. How boring!"
+        },
+        "nav": {
+          "Home": "Home",
+          "About": "About"
+        },
+        "about": {
+          "title": "About",
+          "content": "The \"About\" page is perhaps one of the most boring sections of any website. It's often a place where dull, lifeless biographies are found, seemingly written by robots instead of humans. Instead of providing interesting and relevant information about the company or person behind the website, \"About\" pages often feel like a box to be checked off to fill space. It would be much more interesting and effective if websites took the time to tell a compelling and unique story on their \"About\" page, instead of simply listing facts and figures.",
+          "slug": "about"
+        }
+      }
+    },
+    {
+      "locale": "es",
+      "value": {
+        "common": {
+          "title": "NextRoots",
+          "description": "Next 13 app multi-idioma y multipágina de ejemplo"
+        },
+        "home": {
+          "title": "Inicio",
+          "content": "La página de inicio puede ser tan aburrida. Hay tantas imágenes y bloques de texto que no sabes por dónde empezar. La mayoría de las veces, todo lo que quieres es llegar a lo que realmente importa, pero tienes que desplazarte hacia abajo y hacia arriba para encontrar lo que buscas. A veces, parece que nunca terminarás de desplazarte. ¡Qué aburrimiento!"
+        },
+        "nav": {
+          "Home": "Inicio",
+          "About": "Acerca"
+        },
+        "about": {
+          "title": "Acerca",
+          "content": "La página de \"Acerca de\" es quizás una de las secciones más aburridas de cualquier sitio web. A menudo es un lugar donde se encuentran biografías aburridas y estériles, que parecen haber sido escritas por robots en lugar de seres humanos. En lugar de proporcionar información interesante y relevante sobre la empresa o la persona detrás del sitio web, las páginas de \"Acerca de\" a menudo se sienten como un deber cumplido para rellenar espacio. Sería mucho más interesante y efectivo si los sitios web se tomaran el tiempo de contar una historia convincente y única en su página de \"Acerca de\", en lugar de simplemente enumerar hechos y cifras.",
+          "slug": "acerca"
+        }
+      }
+    }
+  ]
+}

@@ -1,3 +1,55 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "./node_modules/standard/eslintrc.json"
+  ],
+  "rules": {
+    "space-before-function-paren": "off",
+    "no-unused-vars": "warn",
+    "no-undef": "error",
+    "no-multiple-empty-lines": "off",
+    "eol-last": "off",
+    "multiline-ternary": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "only-multiline",
+        "exports": "only-multiline",
+        "functions": "ignore"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.js",
+        "src/**/*.jsx",
+        "src/**/*.ts",
+        "src/**/*.tsx"
+      ],
+      "rules": {
+        "@next/next/no-img-element": "off"
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@/",
+            "src/"
+          ]
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
 }
