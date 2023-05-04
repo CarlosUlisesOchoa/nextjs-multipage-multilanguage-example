@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 13.4 + appDir enabled + i18n + [next-roots](https://github.com/svobik7/next-roots)
+
+This is a Next.js 13.4 project that leverages i18n, the experimental appDir feature, and the next-roots package for an improved internationalization experience and SEO friendly.
+
+<br/>
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
+- [About developer](#about-developer)
+
+<br/>
+
+## Overview
+
+In this application, I've implemented internationalization (i18n) by using the next-roots package. This approach simplifies routing by generating all localized file-routes (slugs) in advance, rather than using dynamic `[lang]` segments.
+
+<br/>
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Open the project's folder:
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+```bash
+  cd nextjs-multipage-multilanguage-example
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br/>
 
-## Learn More
+3. Install dependencies:
+ 
+```bash
+  pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+<br/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Generate the routes (routes are generated and placed at ```src/app```
+ 
+ ```bash
+   pnpm next-roots
+ ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br/>
 
-## Deploy on Vercel
+5. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br/>
+
+6. Open http://localhost:3000 in your browser to see the app in action.
+
+<br/>
+
+## Contributing
+
+Pull requests and contributions are welcome. Please open an issue first to discuss your proposed changes or improvements.
+
+<br/>
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+<br/>
+
+## About developer
+
+Visit my web [Carlos Ochoa](https://carlos8a.com)
+
+<br/>
+
+---
+
+**Note:** If you encounter any issues with the project, please report them [here](https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example/issues). Contributions are welcome!
