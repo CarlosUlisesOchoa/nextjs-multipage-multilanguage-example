@@ -1,8 +1,15 @@
-# Next.js 13.4 + appDir enabled + i18n + [next-roots](https://github.com/svobik7/next-roots)
-
-This is a Next.js 13.4 project that leverages i18n, the experimental appDir feature, and the next-roots package for an improved internationalization experience and SEO friendly.
+<div align="center">
+  <h1>Next.js 13.4 + appDir enabled + i18n + <a href="https://github.com/svobik7/next-roots">next-roots</a></h1>
+  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/badge/latest%20release-v1.0.0-blue" /></a>
+  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/badge/coverage-100%25-brightgreen" /></a>
+  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/tokei/lines/github/carlosulisesochoa/nextjs-multipage-multilanguage-example" /></a>
+  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" /></a>
+  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
+</div>
 
 <br/>
+
+This is a Next.js 13.4 project that leverages i18n, the experimental appDir feature, and the next-roots package for an improved internationalization experience and SEO friendly. <br/> <br/>
 
 ## Table of Contents
 
