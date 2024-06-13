@@ -1,15 +1,26 @@
 <div align="center">
-  <h1>Next.js 13.4 + appDir enabled + i18n + <a href="https://github.com/svobik7/next-roots">next-roots</a></h1>
-  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/badge/latest%20release-v1.0.0-blue" /></a>
-  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/badge/coverage-100%25-brightgreen" /></a>
-  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/tokei/lines/github/carlosulisesochoa/nextjs-multipage-multilanguage-example" /></a>
+  <h1>Next.js 14.2 + appDir + i18n + <a href="https://github.com/svobik7/next-roots">next-roots</a></h1>
+  <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/badge/latest%20release-v2.1.0-blue" /></a>
   <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" /></a>
   <a href="https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
 </div>
 
 <br/>
 
-This is a Next.js 13.4 project that leverages i18n, the experimental appDir feature, and the next-roots package for an improved internationalization experience and SEO friendly. <br/> <br/>
+![bg-next-roots](https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example/assets/26280134/aad88e22-e2b1-4217-9e8f-99cb1bcba48b)
+
+## Overview
+
+This project template showcases an enhanced internationalization (i18n) experience in a Next.js application using the next-roots package. By generating all localized file-routes (slugs) in advance, this approach simplifies routing and improves performance compared to dynamic `[lang]` segments.
+
+<br/>
+
+### Key Benefits
+
+- **Simplified Routing**: Automatically generates localized routes such as `/es/acerca` and `/about`, allowing you to manage multiple languages efficiently.
+- **Centralized Translation Files**: Keep your code clean by defining routes in one file and placing translations in another, making it easier to maintain and scale your application.
+
+<br/>
 
 ## Table of Contents
 
@@ -17,59 +28,45 @@ This is a Next.js 13.4 project that leverages i18n, the experimental appDir feat
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
-- [About developer](#about-developer)
-
-<br/>
-
-## Overview
-
-In this application, I've implemented internationalization (i18n) by using the next-roots package. This approach simplifies routing by generating all localized file-routes (slugs) in advance, rather than using dynamic `[lang]` segments.
+- [About Developer](#about-developer)
 
 <br/>
 
 ## Getting Started
 
-1. Clone the repository:
+1. **Clone the repository:**
 
-```bash
-  git clone https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example.git
-```
+    ```bash
+    git clone https://github.com/CarlosUlisesOchoa/nextjs-multipage-multilanguage-example.git
+    ```
 
-<br/>
+2. **Navigate to the project directory:**
 
-2. Open the project's folder:
+    ```bash
+    cd nextjs-multipage-multilanguage-example
+    ```
 
-```bash
-  cd nextjs-multipage-multilanguage-example
-```
+3. **Install dependencies:**
 
-<br/>
+    ```bash
+    pnpm install
+    ```
 
-3. Install dependencies:
- 
-```bash
-  pnpm install
-```
+4. **Generate the routes:**
 
-<br/>
+    ```bash
+    pnpm next-roots
+    ```
 
-4. Generate the routes (routes are generated and placed at ```src/app```
- 
- ```bash
-   pnpm next-roots
- ```
+5. **Run the development server:**
 
-<br/>
+    ```bash
+    npm run dev
+    ```
 
-5. Run the development server:
+6. **Open the application:**
 
-```bash
-  npm run dev
-```
-
-<br/>
-
-6. Open http://localhost:3000 in your browser to see the app in action.
+    Visit [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
 
 <br/>
 
