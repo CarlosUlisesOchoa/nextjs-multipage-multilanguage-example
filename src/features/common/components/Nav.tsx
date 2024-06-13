@@ -1,18 +1,18 @@
 /* eslint-disable react/jsx-closing-bracket-location */
 'use client'
 
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid'
+import HamburgerIcon from '@/Icons/HamburgerIcon'
+import XIcon from '@/Icons/XIcon'
 import clsx from 'clsx'
 import Link from 'next/link'
-import { Disclosure } from '@/libs/headlessui/react'
-// import { useState } from 'react'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 
 import { usePathname } from 'next/navigation'
 
 type NavItem = { name: string; href: string }
 type NavProps = { items: NavItem[] }
 
-export function Nav({ items }: NavProps) {
+export function Nav({ items }: Readonly<NavProps>) {
   const pageHref = usePathname()
   return (
     <Disclosure as='nav' className='bg-gray-800'>
@@ -33,9 +33,7 @@ export function Nav({ items }: NavProps) {
                             : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
-                        aria-current={
-                          item.href === pageHref ? 'page' : undefined
-                        }>
+                        aria-current={item.href === pageHref ? 'page' : undefined}>
                         {item.name}
                       </Link>
                     ))}
@@ -44,22 +42,22 @@ export function Nav({ items }: NavProps) {
               </div>
               <div className='-mr-2 flex md:hidden'>
                 {/* Mobile menu button */}
-                <Disclosure.Button className='inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
+                <DisclosureButton className='inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
-                    <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
+                    <XIcon className='block h-6 w-6' aria-hidden='true' />
                   ) : (
-                    <Bars3Icon className='block h-6 w-6' aria-hidden='true' />
+                    <HamburgerIcon className='block h-6 w-6' aria-hidden='true' />
                   )}
-                </Disclosure.Button>
+                </DisclosureButton>
               </div>
             </div>
           </div>
 
-          <Disclosure.Panel className='md:hidden'>
+          <DisclosurePanel className='md:hidden'>
             <div className='space-y-1 px-2 pt-2 pb-3 sm:px-3'>
               {items.map((item) => (
-                <Disclosure.Button
+                <DisclosureButton
                   key={item.name}
                   className={clsx(
                     item.href === pageHref
@@ -69,10 +67,10 @@ export function Nav({ items }: NavProps) {
                   )}
                   aria-current={item.href === pageHref ? 'page' : undefined}>
                   <Link href={item.href}>{item.name}</Link>
-                </Disclosure.Button>
+                </DisclosureButton>
               ))}
             </div>
-          </Disclosure.Panel>
+          </DisclosurePanel>
         </>
       )}
     </Disclosure>

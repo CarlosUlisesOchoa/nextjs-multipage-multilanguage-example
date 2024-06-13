@@ -7,14 +7,12 @@ type LinksProps = {
   items: Item[]
 }
 
-export function Links({ header, items }: LinksProps) {
+export function Links({ header, items }: Readonly<LinksProps>) {
   return (
     <div className='max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg'>
-      <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
-        {header}
-      </h2>
+      <h2 className='text-2xl font-bold tracking-tight text-gray-900'>{header}</h2>
 
-      <ul role='list' className='mt-4 text-indigo-600'>
+      <ul className='mt-4 text-indigo-600'>
         {items.map((link) => (
           <li key={link.locale} className='flex gap-x-1'>
             <Link href={link.href}>{link.name}</Link>

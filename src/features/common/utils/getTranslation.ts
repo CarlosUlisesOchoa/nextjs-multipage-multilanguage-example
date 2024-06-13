@@ -7,11 +7,7 @@ type GetTranslationProps = {
   locale: string
 }
 
-export function getTranslation({
-  data,
-  locale,
-  propName,
-}: GetTranslationProps): string {
+export function getTranslation({ data, locale, propName }: GetTranslationProps): string {
   const propValue = getPropValue(data, propName)
 
   if (Array.isArray(propValue)) {

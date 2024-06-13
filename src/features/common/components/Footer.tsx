@@ -11,10 +11,8 @@ function getLocales() {
 export function Footer() {
   const locales = getLocales()
   return (
-    <>
-      <footer className='py-6'>
-        <LanguageSwitcher locales={locales} />
-      </footer>
-    </>
+    <footer className='py-6'>
+      <LanguageSwitcher locales={locales} />
+    </footer>
   )
 }
