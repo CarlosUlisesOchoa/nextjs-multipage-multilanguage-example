@@ -31,9 +31,7 @@ export async function Layout({ children, locale }: RootLayoutProps) {
       <body className='h-full'>
         <div className='flex min-h-full flex-col'>
           <Nav items={navigation} />
-          <main className='mx-auto max-w-7xl py-6 sm:px-6 lg:px-8'>
-            {children}
-          </main>
+          <main className='mx-auto max-w-7xl py-6 sm:px-6 lg:px-8'>{children}</main>
           <Footer />
         </div>
       </body>

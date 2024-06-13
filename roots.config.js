@@ -5,7 +5,7 @@ module.exports = {
   // where original routes are placed
   originDir: path.resolve(__dirname, 'src/roots'),
   // where translated routes will be saved
-  localizedDir: path.resolve(__dirname, 'src/app'),
+  localizedDir: path.resolve(__dirname, 'app'),
   // which locales are we going to use (URL prefixes)
   locales: ['en', 'es'],
   // which locale is considered as default when no other match

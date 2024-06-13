@@ -13,9 +13,7 @@ export async function getDictionary(locale: string = getPageLocale()) {
 
   return (propName: Paths<typeof dictionary.value>) => {
     const defaultValue =
-      process.env.NODE_ENV === 'development'
-        ? `MissingTranslation(${locale}): "${propName}"`
-        : propName
+      process.env.NODE_ENV === 'development' ? `MissingTranslation(${locale}): "${propName}"` : propName
 
     return getPropValue(dictionary.value, propName, defaultValue)
   }
