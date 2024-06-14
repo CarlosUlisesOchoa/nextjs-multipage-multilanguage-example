@@ -55,7 +55,7 @@ This project template showcases an enhanced internationalization (i18n) experien
 4. **Run the development server:**
 
     ```bash
-    npm run dev
+    pnpm dev
     ```
 
 5. **Open the application:**
