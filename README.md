@@ -52,19 +52,13 @@ This project template showcases an enhanced internationalization (i18n) experien
     pnpm install
     ```
 
-4. **Generate the routes:**
-
-    ```bash
-    pnpm next-roots
-    ```
-
-5. **Run the development server:**
+4. **Run the development server:**
 
     ```bash
     npm run dev
     ```
 
-6. **Open the application:**
+5. **Open the application:**
 
     Visit [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
 
